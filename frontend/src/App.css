@@ -201,6 +201,13 @@ textarea {
   textarea {
     width: 100%;
   }
+
+  .search-box {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
 }
 
 textarea {
@@ -210,9 +217,11 @@ textarea {
 }
 .search-box {
   width: 100%;
+  max-width: 100%;
   padding: 12px;
   margin: 20px 0;
   border: 2px solid #0d6efd;
   border-radius: 8px;
   font-size: 16px;
+  box-sizing: border-box;
 }
