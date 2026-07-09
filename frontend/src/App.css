@@ -138,9 +138,18 @@ textarea {
   border-radius: 15px;
   padding: 25px;
   margin: 20px auto;
-  width: 70%;
+  width: 40%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: #f8fbff;
 }
+
+.upload-box input[type="file"] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 
 .upload-box input {
   margin-bottom: 10px;
@@ -152,34 +161,45 @@ textarea {
 }
 
 @media (max-width: 768px) {
+
   .container {
     width: 95%;
     padding: 15px;
-  }
-
-  textarea {
-    width: 100%;
+    box-sizing: border-box;
   }
 
   .upload-box {
     width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .upload-box input[type="file"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .title,
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
   }
 
   .score-card {
     width: 100%;
   }
 
-  button {
+  textarea {
     width: 100%;
-    margin-top: 10px;
-  }
-
-  .header h1 {
-    font-size: 32px;
-  }
-
-  .header p {
-    font-size: 16px;
   }
 }
 
